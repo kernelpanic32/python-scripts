@@ -38,7 +38,8 @@ def PrintData(data):
 
 	#if country codes json exists then outputs more specific region location
 	try:
-		with open('country_codes.json') as country_codes:
+
+		with open(sys.path[0]+'/country_codes.json') as country_codes:
 			json_data = json.load(country_codes)
 			all_countries = json_data["country"]
 
