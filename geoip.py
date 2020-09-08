@@ -1,7 +1,7 @@
 #Coded by kernelpanic32 2020
 #YOU CAN USE country_codes.json TO GET MORE SPECIFIC LOCATION!
 #SYNTAX: simply use "geoip.py" without arguments to get your public ip info
-#or provide another ip ex.: "geoip.py 256.234.12.563"
+#or provide another ip ex.: "geoip.py 256.234.12.563".
 
 from urllib import urlopen
 import sys
