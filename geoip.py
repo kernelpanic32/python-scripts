@@ -52,14 +52,10 @@ def PrintData(data):
 
 		region = data['region']+', '+json_row['countryName']+' ['+json_row["countryCode"]+'], '+json_row['continentName']
 
-	except IOError:
+	except:
 		#if country codes json does not exist then outputs simple code
 		region = data['region']+' ['+data['country']+']'
 		print('Country codes file not accessible')
-
-	finally:
-		country_codes.close()
-
 
 	try:
 		print('')		
